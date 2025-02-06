@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "CeraPro-Regular";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraPro-Bold";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CeraPro-Black";
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  font-family: "CeraPro-Regular";
+  font-weight: 400;
+  font-size: 15px;
+}
+header {
+  font-family: "CeraPro-Regular";
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 30px;
+}
+.header-info {
+  margin-bottom: 16px;
+}
+.header-nav,
+.header-logo,
+.header-button,
+.banner-text,
+.banner-picture {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+.btn {
+  display: inline-block;
+  width: 90px;
+  background: #46a358;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: top;
+}
+.btn svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn a {
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn:hover {
+  background-color: #d1d1d1;
+}
+.header-nav {
+  width: calc(100% - 250px);
+  text-align: center;
+}
+.header-nav a.active {
+  font-family: "CeraPro-Bold";
+  font-weight: 700;
+  border-bottom: 3px solid;
+  border-color: #46a358;
+  padding-bottom: 25px;
+}
+.header-nav_list li {
+  margin: 0 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hr_header-info {
+  background-color: #709978;
+  margin: 0;
+  margin-bottom: 12px;
+}
+.banner {
+  background-color: #f5f5f580;
+  font-size: 16px;
+}
+.banner .btn {
+  font-family: "CeraPro-Bold";
+  width: 140px;
+  margin-top: 44px;
+  text-transform: uppercase;
+}
+div.btn:hover {
+  color: #46a358;
+}
+.banner-text {
+  vertical-align: top;
+  width: 647px;
+  padding-left: 42px;
+  padding-top: 68px;
+  color: #3d3d3d;
+}
+.banner-text h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+  color: #3d3d3d;
+}
+.banner-text h1 {
+  font-family: "CeraPro-Black";
+  font-weight: 900;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 7px 0 5px 0;
+  color: #3d3d3d;
+}
+.banner-text-h1word {
+  color: #46a358;
+}
+.banner-text p {
+  font-family: "CeraPro-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #3d3d3d;
+  line-height: 24px;
+}
+.banner-pic {
+  display: inline-block;
+}
+.active {
+  color: #46a358;
+  font-family: "latobold";
+  font-weight: 700;
+  border-bottom: 3px solid;
+  border-color: #46a358;
+  padding-bottom: 7px;
+}
