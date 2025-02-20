@@ -23,8 +23,8 @@
 }
 body {
   font-family: "CeraPro-Regular";
-  font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.7;
 }
 header {
   font-family: "CeraPro-Regular";
@@ -50,9 +50,11 @@ a {
 }
 ul {
   list-style-type: none;
+  padding-left: 16px;
   margin: 0;
 }
 .btn {
+  font-weight: 500;
   display: inline-block;
   width: 90px;
   background: #46a358;
@@ -100,6 +102,7 @@ ul {
 .banner {
   background-color: #f5f5f580;
   font-size: 16px;
+  margin-bottom: 26px;
 }
 .banner .btn {
   font-family: "CeraPro-Bold";
@@ -119,14 +122,16 @@ div.btn:hover {
 }
 .banner-text h6 {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   color: #3d3d3d;
+  letter-spacing: 1px;
 }
 .banner-text h1 {
   font-family: "CeraPro-Black";
   font-weight: 900;
   font-size: 70px;
+  line-height: 1;
   text-transform: uppercase;
   margin: 7px 0 5px 0;
   color: #3d3d3d;
@@ -140,15 +145,16 @@ div.btn:hover {
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0;
-  color: #3d3d3d;
+  color: #727272;
   line-height: 24px;
 }
 .banner-pic {
   display: inline-block;
 }
 .active {
+  font-family: "CeraPro-Bold";
+  font-weight: 700;
   color: #46a358;
-  font-family: "latobold";
   font-weight: 700;
   border-bottom: 3px solid;
   border-color: #46a358;
@@ -156,66 +162,72 @@ div.btn:hover {
 }
 .sidebar .active {
   border-bottom: none;
+  padding-bottom: 0;
 }
 .sidebar {
   background-color: #f5f5f580;
   float: left;
   width: 310px;
-  padding-right: 63px;
-  margin-top: 40px;
-}
-.sidebar_list {
   padding-left: 18px;
   padding-top: 14px;
+}
+.sidebar_list {
   height: 774px;
   width: 310px;
 }
+.sidebar_list ul {
+  margin: 0;
+  padding: 0 0 0 12px;
+}
 .sidebar_list li {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .sidebar_list li a:hover {
-  color: #46a358;
-  font-size: 18px;
+  color: #70b36a;
 }
 .sidebar_list p {
-  font-family: "latoblack";
-  font-weight: 900;
+  font-family: "CeraPro-Bold";
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
 }
 .content {
   float: right;
   width: calc(100% - 310px);
-  margin-top: 26px;
-  justify-content: space-between;
-  padding-bottom: 30px;
   padding-left: 50px;
 }
-.content_nav-left a {
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.prod_sort {
+  font-family: "CeraPro-Regular";
+  font-weight: 400;
+  padding-bottom: 31px;
+}
+.prod_sort__filter {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.prod_sort__filter li {
+  display: inline-block;
   margin-right: 40px;
 }
-.content_nav-left {
-  float: left;
-}
-.content_nav-right {
+.prod_sort__sorting {
   float: right;
 }
-.content_nav-right span {
-  float: left;
+.prod_sort__sorting span {
+  display: inline-block;
+  vertical-align: middle;
 }
-.content_nav-right span ul {
+.prod_sort__sorting span ul {
   padding: 0 5px 0 8px;
 }
-ul {
-  list-style-type: none;
-  padding-left: 16px;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-  color: #3d3d3d;
-}
-.filter {
-  float: right;
-  cursor: pointer;
+.prod_sort__sorting .filter {
+  display: inline-block;
+  vertical-align: middle;
 }
 .filter ul {
   float: left;
@@ -223,25 +235,27 @@ a {
 .filter a {
   float: right;
 }
-
 .card-block {
-  float: right;
-  padding-top: 31px;
+  margin: 0;
+  padding: 0;
 }
 .card-product {
-  background-color: #f5f5f580;
+  font-family: "CeraPro-Bold";
+  font-size: 16px;
   float: left;
   width: 258px;
-  margin-right: 28px;
-  margin-bottom: 98px;
+  margin-bottom: 76px;
+  margin-right: 33px;
 }
-.card-product a {
-  font-family: "latobold";
-  font-size: 16px;
+.img_plant {
+  background-color: #f5f5f580;
+}
+
+.card-product h5 {
+  margin: 0;
 }
 .card-product .price_plant {
-  font-family: "latobold";
-  font-weight: 700;
+  font-family: "CeraPro-Bold";
   font-size: 18px;
   margin-top: 6px;
   color: #46a358;
@@ -258,28 +272,38 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.pages {
-  padding-top: 90px;
+
+.pages_list {
   float: right;
-  clear: both;
+  padding-top: 90px;
   padding-bottom: 82px;
 }
 .pages_list li {
+  display: inline-block;
+}
+.pages_list a {
+  /* { 27:42 "чтобы область была кликабельная - стилим а" */
   width: 35px;
   display: inline-block;
-  border-radius: 1px;
-  background: #46a358;
+  background: #ffffff;
   text-align: center;
   padding: 7px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   margin-left: 10px;
+  border: 1px solid #e5e5e5;
+  color: #3d3d3d;
 }
-.pages_list li a {
-  color: white;
+
+.pages_list li.active_page {
+  color: #ffffff;
 }
-.pages_list li:hover {
-  background: #007018;
+.pages_list li a:hover {
+  background: #78997f;
   border-radius: 25px;
+}
+
+li.active_page a {
+  background: #46a358;
 }
