@@ -1,17 +1,16 @@
 @font-face {
-  font-family: "CeraPro-Regular";
+  font-family: "CeraPro";
   src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
 }
 @font-face {
-  font-family: "CeraPro-Bold";
+  font-family: "CeraPro";
   src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "CeraPro-Black";
+  font-family: "CeraPro";
   src: url("../fonts/CeraPro-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
@@ -249,7 +248,6 @@ div.btn:hover {
 .card-product .img_plant {
   background-color: #f5f5f580;
 }
-
 .card-product h5 {
   margin: 0;
 }
@@ -271,7 +269,6 @@ div.btn:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
 .pages_list {
   float: right;
   padding-top: 90px;
@@ -293,7 +290,6 @@ div.btn:hover {
   border: 1px solid #e5e5e5;
   color: #3d3d3d;
 }
-
 .pages_list .active_page a {
   color: #ffffff;
 }
@@ -302,8 +298,31 @@ div.btn:hover {
   color: #ffffff;
   border-radius: 25px;
 }
-
 li.active_page a {
   background: #46a358;
   color: #ffffff;
+}
+.blog_twins_content {
+  display: flex;
+  justify-content: space-between;
+}
+.blog_twins_first {
+  max-width: 546px;
+  display: flex;
+}
+.blog_twins_text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.blog_twins_text .btn {
+  width: 140px;
+}
+
+.blog_twins_text h5 {
+  font-weight: 900px;
+}
+.blog_twins_text p {
+  font-weight: 400px;
 }
