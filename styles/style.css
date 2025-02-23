@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "CeraPro-Regular";
+  font-family: "CeraPro";
   src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "CeraPro-Bold";
+  font-family: "CeraPro";
   src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "CeraPro-Black";
+  font-family: "CeraPro";
   src: url("../fonts/CeraPro-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
@@ -22,12 +22,12 @@
   margin: 0 auto;
 }
 body {
-  font-family: "CeraPro-Regular";
+  font-family: "CeraPro";
   font-size: 16px;
   line-height: 1.7;
 }
 header {
-  font-family: "CeraPro-Regular";
+  font-family: "CeraPro";
   font-weight: 400;
   font-size: 15px;
   padding-top: 30px;
@@ -42,7 +42,6 @@ header {
 .banner-picture {
   display: inline-block;
   vertical-align: middle;
-  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -61,7 +60,6 @@ ul {
   color: #ffffff;
   text-align: center;
   padding: 7px;
-  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
   vertical-align: top;
@@ -83,7 +81,6 @@ ul {
   text-align: center;
 }
 .header-nav a.active {
-  font-family: "CeraPro-Bold";
   font-weight: 700;
   border-bottom: 3px solid;
   border-color: #46a358;
@@ -101,11 +98,10 @@ ul {
 }
 .banner {
   background-color: #f5f5f580;
-  font-size: 16px;
   margin-bottom: 26px;
 }
 .banner .btn {
-  font-family: "CeraPro-Bold";
+  font-weight: 700;
   width: 140px;
   margin-top: 44px;
   text-transform: uppercase;
@@ -122,13 +118,11 @@ div.btn:hover {
 }
 .banner-text h6 {
   text-transform: uppercase;
-  font-size: 16px;
   margin: 0;
   color: #3d3d3d;
   letter-spacing: 1px;
 }
 .banner-text h1 {
-  font-family: "CeraPro-Black";
   font-weight: 900;
   font-size: 70px;
   line-height: 1;
@@ -140,7 +134,6 @@ div.btn:hover {
   color: #46a358;
 }
 .banner-text p {
-  font-family: "CeraPro-Regular";
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
@@ -152,7 +145,6 @@ div.btn:hover {
   display: inline-block;
 }
 .active {
-  font-family: "CeraPro-Bold";
   font-weight: 700;
   color: #46a358;
   font-weight: 700;
@@ -172,7 +164,7 @@ div.btn:hover {
 .sidebar_list {
   width: 310px;
   padding-left: 18px;
-  padding-bottom: 252px;
+  padding-bottom: 260px;
 }
 .sidebar_list ul {
   margin: 0;
@@ -184,8 +176,7 @@ div.btn:hover {
 .sidebar_list li a:hover {
   color: #70b36a;
 }
-.sidebar_list p {
-  font-family: "CeraPro-Bold";
+.sidebar_list h3 {
   font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
@@ -201,7 +192,6 @@ div.btn:hover {
   clear: both;
 }
 .prod_sort {
-  font-family: "CeraPro-Regular";
   font-weight: 400;
   padding-bottom: 31px;
 }
@@ -239,8 +229,7 @@ div.btn:hover {
   padding: 0;
 }
 .card-product {
-  font-family: "CeraPro-Bold";
-  font-size: 16px;
+  font-weight: 400;
   float: left;
   width: 258px;
   margin-bottom: 76px;
@@ -251,10 +240,12 @@ div.btn:hover {
 }
 
 .card-product h5 {
+  font-size: 16px; /* if I remove the font size from here it becomes 13.28 */
+  font-weight: 400;
   margin: 0;
 }
 .card-product .price_plant {
-  font-family: "CeraPro-Bold";
+  font-weight: 700;
   font-size: 18px;
   margin-top: 6px;
   color: #46a358;
@@ -277,16 +268,17 @@ div.btn:hover {
   padding-top: 90px;
   padding-bottom: 82px;
 }
+
 .pages_list li {
   display: inline-block;
 }
+
 .pages_list a {
   width: 35px;
   display: inline-block;
   background: #ffffff;
   text-align: center;
   padding: 7px;
-  font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   margin-left: 10px;
@@ -297,10 +289,10 @@ div.btn:hover {
 .pages_list .active_page a {
   color: #ffffff;
 }
+
 .pages_list li a:hover {
   background: #46a358;
   color: #ffffff;
-  border-radius: 25px;
 }
 
 li.active_page a {
