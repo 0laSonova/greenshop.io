@@ -38,7 +38,6 @@ h6 {
 
 header {
   font-family: "CeraPro";
-  font-weight: 400;
   font-size: 15px;
   padding-top: 30px;
 }
@@ -46,6 +45,7 @@ header {
   margin-bottom: 16px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .header-nav {
   align-items: center;
@@ -84,7 +84,6 @@ ul {
   background-color: #d1d1d1;
 }
 .header-nav {
-  width: calc(100% - 250px);
   display: flex;
   justify-content: center;
 }
@@ -125,7 +124,7 @@ div.btn:hover {
   align-items: center;
   align-content: center;
   vertical-align: top;
-  width: 647px;
+  max-width: 52%;
   padding-left: 42px;
   padding-top: 68px;
   color: #3d3d3d;
@@ -149,7 +148,6 @@ div.btn:hover {
   color: #46a358;
 }
 .banner-text p {
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
   margin: 0;
@@ -207,7 +205,6 @@ div.btn:hover {
 .prod_sort {
   display: flex;
   justify-content: space-between;
-  font-weight: 400;
   padding-bottom: 31px;
 }
 .prod_sort__filter {
@@ -244,7 +241,7 @@ div.btn:hover {
   padding: 0;
 }
 .card-product {
-  font-weight: 400;
+  max-width: 33%;
   width: 258px;
   margin-bottom: 76px;
 }
@@ -254,7 +251,6 @@ div.btn:hover {
 
 .card-product h5 {
   font-size: 16px; /* if I remove the font size from here it becomes 13.28 */
-  font-weight: 400;
   margin: 0;
 }
 .card-product .price_plant {
@@ -321,17 +317,19 @@ li.active_page a {
   padding-bottom: 138px;
 }
 .blog_twins_first {
-  max-width: 586px;
+  max-width: 50%;
   display: flex;
   background-color: #fbfbfb;
 }
 .blog_twins_text {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
   padding: 30px 30px 30px 0;
   margin-left: -50px;
+  text-align: right;
 }
 .blog_twins_text .btn {
   width: 140px;
@@ -342,22 +340,20 @@ li.active_page a {
 
 .blog_twins_text h5 {
   color: #3d3d3d;
-  text-align: right;
   margin: 0;
   font-family: "CeraPro";
   font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
-  width: 150px;
+  padding-left: 58%;
 }
 .blog_twins_text p {
-  width: 292px;
   text-align: right;
   margin: 0;
-  font-weight: 400;
   font-size: 14px;
   color: #727272;
   padding: 15px 0;
+  padding-left: 20%;
 }
 .blog_twins_img {
   flex-basis: 50%;
@@ -367,10 +363,8 @@ li.active_page a {
   max-width: 100%;
 }
 .blog_title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 35px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 .blog_title h2 {
   font-weight: 700;
@@ -383,6 +377,9 @@ li.active_page a {
 .blog_posts {
   display: flex;
   justify-content: space-between;
+}
+.blog_posts_card {
+  max-width: 25%;
 }
 .blog_posts_card__text {
   max-width: 268px;
