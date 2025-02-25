@@ -73,21 +73,17 @@ ul {
   position: relative;
 }
 
-.blog_twins_text .btn::after {
-  content: url("../images/arrow-right-white.svg");
-  position: absolute;
-  right: 17px;
+.header-info .btn {
+  padding-left: 26px;
 }
 
-.blog_twins_text .btn:hover::after {
-  content: url("../images/arrow-right-white.svg");
+.header-info .btn::after {
+  content: url("../images/logout.svg");
   position: absolute;
-  right: 17px;
+  right: 59px;
+  top: 12px;
 }
 
-/* .btn img {
-  max-width: 20px;
-} */
 .btn a {
   font-weight: 500;
   font-size: 16px;
@@ -95,8 +91,10 @@ ul {
   display: inline-block;
   vertical-align: middle;
 }
+
 .btn:hover {
-  background-color: #d1d1d1;
+  background: #d1d1d1;
+  color: #46a358;
 }
 .header-nav {
   width: calc(100% - 250px);
@@ -143,7 +141,6 @@ ul {
 .nav_sub-menu .nav_sub-menu_item:hover {
   background: #1a712a;
   color: #fff;
-  /* не срабатывает цвет */
 }
 .nav_sub-menu li:hover .nav_sub2-menu {
   display: block;
@@ -207,9 +204,6 @@ ul {
   width: 140px;
   margin-top: 44px;
   text-transform: uppercase;
-}
-div.btn:hover {
-  color: #46a358;
 }
 .banner-text {
   display: flex;
@@ -496,6 +490,20 @@ li.active_page a {
 }
 .blog_twins_img img {
   margin-top: -60px;
+}
+
+.blog_twins_text .btn::after {
+  content: url("../images/arrow-right-white.svg");
+  position: absolute;
+  right: 17px;
+  top: 10px;
+}
+
+.blog_twins_text .btn:hover::after {
+  content: url("../images/arrow-right-white.svg");
+  position: absolute;
+  right: 17px;
+  top: 10px;
 }
 .blog_title {
   text-align: center;
