@@ -37,7 +37,6 @@ h6 {
 }
 
 header {
-  font-family: "CeraPro";
   font-size: 15px;
   padding-top: 30px;
 }
@@ -56,9 +55,12 @@ a {
 }
 ul {
   list-style-type: none;
-  padding-left: 16px;
   margin: 0;
 }
+.sidebar_list ul {
+  padding-left: 16px;
+}
+
 .btn {
   font-weight: 500;
   display: inline-block;
@@ -379,7 +381,7 @@ li.active_page a {
   justify-content: space-between;
 }
 .blog_posts_card {
-  max-width: 25%;
+  width: 25%;
 }
 .blog_posts_card__text {
   max-width: 268px;
@@ -405,21 +407,29 @@ li.active_page a {
   padding-bottom: 9px;
 }
 
-.blog_posts_card__text h5 {
+.blog_posts_card__text a {
   font-size: 14px;
   color: #3d3d3d;
 }
 
-.blog_posts_card__text h5:hover {
+.blog_posts_card__text a:hover {
   font-size: 14px;
   color: #46a358;
 }
-
 .blog_posts_read-btn {
-  display: flex;
   cursor: pointer;
+  position: relative;
 }
 
-.blog_posts_read-btn img {
-  padding-left: 5px;
+.blog_posts_read-btn::after {
+  content: url("../images/arrow-right-black2.svg");
+  position: absolute;
+  left: 80px;
+  top: 0;
+}
+.blog_posts_read-btn:hover::after {
+  content: url("../images/arrow-right-hover.svg");
+  position: absolute;
+  left: 80px;
+  top: 0;
 }
