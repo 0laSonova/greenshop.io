@@ -379,10 +379,12 @@ li.active_page a {
 .blog_posts {
   display: flex;
   justify-content: space-between;
+  gap: 44px;
 }
 .blog_posts_card {
-  width: 25%;
+  width: calc((100% - 132px) / 4);
 }
+
 .blog_posts_card__text {
   max-width: 268px;
   padding: 9px 11px 12px 15px;
@@ -432,5 +434,5 @@ s .blog_posts_card__text h3 {
   position: absolute;
   left: 80px;
   top: 0;
-  color: #46a358\;
+  color: #46a358\;;
 }
